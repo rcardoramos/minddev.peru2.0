@@ -450,6 +450,8 @@ function initializeTeamDetails() {
     });
 }
 
+
+
 // Banner messages rotation functionality
 function initializeBannerRotation() {
     const messages = document.querySelectorAll('.banner-message');

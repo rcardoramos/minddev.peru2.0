@@ -193,3 +193,44 @@
         transform: translateY(-20px);
     }
 }
+
+.hero-visual-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Ya tienes .hero-visual definido (columna), no lo tocamos */
+
+.floating-logo-large {
+    width: 360px;
+    height: 360px;
+    /* igual que el ancho para que sea cuadrado */
+    background: rgba(59, 130, 246, 0.15);
+    border: 2px solid rgba(59, 130, 246, 0.4);
+    border-radius: 20px;
+    /* para que mantenga el mismo estilo que los otros */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.floating-logo-large:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.6);
+}
+
+.logo-image {
+    max-height: 360px;
+    max-width: 360px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.3));
+}
