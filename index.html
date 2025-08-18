@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital - Desarrollo Web & Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra superior de ofertas -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <div class="banner-messages">
+                <div class="banner-message active">
+                    <i class="fas fa-fire"></i>
+                    <span>🔥 OFERTA ESPECIAL: 50% de descuento en desarrollo web</span>
+                </div>
+                <div class="banner-message">
+                    <i class="fas fa-star"></i>
+                    <span>⭐ 60% OFF en diseño de aplicaciones móviles</span>
+                </div>
+                <div class="banner-message">
+                    <i class="fas fa-rocket"></i>
+                    <span>🚀 SEO y Marketing Digital con 40% de descuento</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con estilo Apple -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span class="brand-text">Nexus</span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link" title="Inicio">
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                <li><a href="#servicios" class="nav-link" title="Servicios">
+                        <i class="fas fa-cogs"></i>
+                    </a></li>
+                <li><a href="#equipo" class="nav-link" title="Equipo">
+                        <i class="fas fa-users"></i>
+                    </a></li>
+                <li><a href="#portafolio" class="nav-link" title="Portafolio">
+                        <i class="fas fa-briefcase"></i>
+                    </a></li>
+                <li><a href="#contacto" class="nav-link" title="Contacto">
+                        <i class="fas fa-envelope"></i>
+                    </a></li>
+            </ul>
+
+            <div class="nav-action">
+                <button class="btn-cotizar">
+                    <i class="fas fa-calculator"></i>
+                    <span>Cotizar Proyecto</span>
+                </button>
+            </div>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section con estilo minimalista -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Innovación</span>
+                    <span class="title-line">Digital</span>
+                    <span class="title-accent">Sin Límites</span>
+                </h1>
+                <p class="hero-description">
+                    Creamos experiencias digitales que transforman ideas en realidades.
+                    Desarrollo web, aplicaciones móviles y soluciones tecnológicas de vanguardia.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        <span>Iniciar Proyecto</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        <span>Explorar</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-element">
+                    <div class="element-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="element-glow"></div>
+                </div>
+                <div class="floating-element">
+                    <div class="element-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="element-glow"></div>
+                </div>
+                <div class="floating-element">
+                    <div class="element-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="element-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Servicios con diseño de tarjetas modernas -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servicios</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="card-number">01</div>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web de alto rendimiento con tecnologías modernas y diseño responsivo.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">React</span>
+                        <span class="feature-tag">Node.js</span>
+                        <span class="feature-tag">SEO</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="card-number">02</div>
+                    </div>
+                    <h3>Apps Móviles</h3>
+                    <p>Aplicaciones nativas y multiplataforma con experiencias de usuario excepcionales.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">iOS</span>
+                        <span class="feature-tag">Android</span>
+                        <span class="feature-tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-number">03</div>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estrategias integrales de marketing digital para maximizar tu presencia online.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">SEO</span>
+                        <span class="feature-tag">Ads</span>
+                        <span class="feature-tag">Analytics</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="card-number">04</div>
+                    </div>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Interfaces intuitivas y atractivas que convierten usuarios en clientes leales.</p>
+                    <div class="card-features">
+                        <span class="feature-tag">Figma</span>
+                        <span class="feature-tag">Prototipado</span>
+                        <span class="feature-tag">Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo con diseño de perfiles modernos -->
+    <section id="equipo" class="team-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Profesionales apasionados por la innovación digital</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                            alt="Carlos Mendoza">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Carlos Mendoza</h3>
+                        <p class="member-role">CEO & Fundador</p>
+                        <div class="member-buttons">
+                            <a href="#" class="btn-linkedin" title="Ver perfil de LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <button class="btn-plus" data-member="carlos" title="Ver más información">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="member-details" id="details-carlos">
+                        <p>Experto en estrategia digital con más de 10 años liderando proyectos tecnológicos. Apasionado
+                            por la innovación y el crecimiento empresarial.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+                            alt="Ana Rodríguez">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Ana Rodríguez</h3>
+                        <p class="member-role">Directora de Diseño</p>
+                        <div class="member-buttons">
+                            <a href="#" class="btn-linkedin" title="Ver perfil de LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <button class="btn-plus" data-member="ana" title="Ver más información">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="member-details" id="details-ana">
+                        <p>Diseñadora UX/UI con experiencia en crear experiencias digitales memorables. Especializada en
+                            diseño centrado en el usuario y tendencias modernas.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+                            alt="David Chen">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">David Chen</h3>
+                        <p class="member-role">Lead Developer</p>
+                        <div class="member-buttons">
+                            <a href="#" class="btn-linkedin" title="Ver perfil de LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <button class="btn-plus" data-member="david" title="Ver más información">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="member-details" id="details-david">
+                        <p>Desarrollador full-stack con expertise en tecnologías modernas como React, Node.js y Python.
+                            Comprometido con código limpio y arquitecturas escalables.</p>
+                    </div>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+                            alt="María González">
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">María González</h3>
+                        <p class="member-role">Especialista en Marketing Digital</p>
+                        <div class="member-buttons">
+                            <a href="#" class="btn-linkedin" title="Ver perfil de LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <button class="btn-plus" data-member="maria" title="Ver más información">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="member-details" id="details-maria">
+                        <p>Estratega de marketing digital con enfoque en SEO, SEM y redes sociales. Experta en aumentar
+                            la visibilidad online de marcas y empresas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio con diseño de galería moderna -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portafolio</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                            alt="E-commerce">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>E-commerce Premium</h3>
+                                <p>Plataforma completa de comercio electrónico</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop"
+                            alt="App Móvil">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>App de Fitness</h3>
+                                <p>Aplicación móvil para entrenamientos</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
+                            alt="Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Dashboard Analytics</h3>
+                                <p>Panel de control empresarial</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto con diseño minimalista -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+1 (415) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@nexusdigital.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Enviar Mensaje</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con diseño moderno -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span class="brand-text">Nexus</span>
+                    </div>
+                    <p>Transformamos ideas en experiencias digitales excepcionales.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Apps Móviles</a></li>
+                        <li><a href="#">Marketing Digital</a></li>
+                        <li><a href="#">Diseño UX/UI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>San Francisco, CA</li>
+                        <li>+1 (415) 555-0123</li>
+                        <li>hello@nexusdigital.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nexus Digital. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
