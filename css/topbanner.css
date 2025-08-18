@@ -1,0 +1,45 @@
+.top-banner {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    padding: 8px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.banner-messages {
+    position: relative;
+    height: 24px;
+}
+
+.banner-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.banner-message.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-message i {
+    font-size: 1rem;
+}

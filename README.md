@@ -1,4 +1,4 @@
-# 🚀 Nexus Digital - Página Web Empresarial
+# 🚀 Minddev Perú - Página Web Empresarial
 
 Una página web moderna y minimalista con estilo Apple para empresas de desarrollo web, aplicaciones móviles, SEO y marketing digital.
 
@@ -221,11 +221,3 @@ Para personalizaciones o consultas:
 - Modifica los archivos según tus necesidades
 - Ajusta colores, textos e imágenes
 - Personaliza las animaciones
-
-## 📄 Licencia
-
-Este proyecto está disponible para uso comercial y personal. Personaliza libremente según tus necesidades empresariales.
-
----
-
-**¡Tu empresa merece una presencia digital excepcional con estilo Apple! 🚀✨**

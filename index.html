@@ -5,31 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Digital - Desarrollo Web & Apps</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Barra superior de ofertas -->
-    <div class="top-banner">
+    <section class="top-banner" aria-label="Ofertas especiales">
         <div class="banner-content">
-            <div class="banner-messages">
-                <div class="banner-message active">
-                    <i class="fas fa-fire"></i>
+            <div class="banner-messages" role="list">
+                <div class="banner-message active" role="listitem">
+                    <i class="fas fa-fire" aria-hidden="true"></i>
                     <span>🔥 OFERTA ESPECIAL: 50% de descuento en desarrollo web</span>
                 </div>
-                <div class="banner-message">
-                    <i class="fas fa-star"></i>
+                <div class="banner-message" role="listitem">
+                    <i class="fas fa-star" aria-hidden="true"></i>
                     <span>⭐ 60% OFF en diseño de aplicaciones móviles</span>
                 </div>
-                <div class="banner-message">
-                    <i class="fas fa-rocket"></i>
+                <div class="banner-message" role="listitem">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
                     <span>🚀 SEO y Marketing Digital con 40% de descuento</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Header con estilo Apple -->
     <header class="header">
@@ -474,7 +474,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
