@@ -5,7 +5,7 @@
     transform: translateX(-50%);
     width: fit-content;
     min-width: 800px;
-    background: rgba(10, 10, 10, 0.8);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(30, 64, 175, 0.3));
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     z-index: 1000;
@@ -17,8 +17,18 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+.text-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    background: #fdfcfc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .header.scrolled {
-    background: rgba(10, 10, 10, 0.85);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(30, 64, 175, 0.3));
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(40px);
@@ -92,14 +102,21 @@
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background: linear-gradient(135deg, #1e3a8a, #3b82f6);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* se ajusta sin deformarse */
 }
 
 .logo-icon i {
@@ -124,7 +141,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: #9ca3af;
+    color: #f0f3f8;
     font-size: 1.1rem;
     padding: 0.5rem;
     border-radius: 8px;
@@ -191,4 +208,30 @@
     background: #ffffff;
     border-radius: 1px;
     transition: 0.3s;
+}
+
+:root {
+    --banner-h: 0px;
+    /* JS lo ajusta según tu banner real */
+    --header-h: 64px;
+    /* JS lo ajusta según el alto del header */
+}
+
+/* ========== BASE / DESKTOP ========== */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
 }
