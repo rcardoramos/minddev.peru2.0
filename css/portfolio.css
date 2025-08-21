@@ -12,7 +12,7 @@
 .portfolio-item {
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(59, 130, 246, 0.1);
+    /* border: 1px solid rgba(59, 130, 246, 0.1); */
     transition: all 0.3s ease;
 }
 

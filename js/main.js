@@ -152,38 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // ===== FORMULARIO DE CONTACTO =====
-    const contactForm = document.querySelector('.contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Simular envío
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.querySelector('span').textContent;
-            const originalIcon = submitBtn.querySelector('i').className;
-
-            submitBtn.querySelector('span').textContent = 'Enviando...';
-            submitBtn.querySelector('i').className = 'fas fa-spinner fa-spin';
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                submitBtn.querySelector('span').textContent = '¡Mensaje Enviado!';
-                submitBtn.querySelector('i').className = 'fas fa-check';
-                submitBtn.style.background = '#10b981';
-
-                setTimeout(() => {
-                    submitBtn.querySelector('span').textContent = originalText;
-                    submitBtn.querySelector('i').className = originalIcon;
-                    submitBtn.style.background = '';
-                    submitBtn.disabled = false;
-                    this.reset();
-                }, 2000);
-            }, 1500);
-        });
-    }
-
     // ===== EFECTOS DE CURSOR PERSONALIZADO =====
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
@@ -496,5 +464,50 @@ function initializeCotizarButton() {
                 }, 150);
             }
         });
+    }
+}
+
+
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+    const formAlert = document.getElementById('form-alert');
+
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        submitBtn.disabled = true;
+
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: { Accept: 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                showFormAlert('¡Mensaje enviado con éxito! ✅');
+                this.reset();
+            } else {
+                showFormAlert('⚠️ Ocurrió un error. Intenta nuevamente.');
+            }
+        }).catch(() => {
+            showFormAlert('❌ No se pudo enviar. Verifica tu conexión.');
+        }).finally(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
+    });
+
+    function showFormAlert(message) {
+        formAlert.textContent = message;
+        formAlert.classList.add('show');
+
+        setTimeout(() => {
+            formAlert.classList.remove('show');
+        }, 4000);
     }
 }
